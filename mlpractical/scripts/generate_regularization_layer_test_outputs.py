@@ -3,8 +3,10 @@ import os
 import numpy as np
 
 import sys
+os.chdir("/Users/ashu/Downloads/MLP/mlp_cw2")
+print(os.getcwd())
+os.environ['MLP_DATA_DIR'] = os.path.join(os.getcwd(), 'mlpractical/data')
 
-sys.path.append("mlpractical")
 
 
 from mlp.layers import DropoutLayer
